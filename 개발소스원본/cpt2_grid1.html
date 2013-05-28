@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Mobile grid</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head>
+
+<body>
+
+	<div data-role="page" id="first"> <!-- 첫번째 페이지 -->
+		<div data-role="header">
+			<h1>헤더</h1>
+		</div>
+		<div data-role="content">
+			<p>그리드1</p>
+			<div class="ui-grid-solo">
+				<div class="ui-block-a ui-bar-d">첫 번째 열의 요소</div>
+			</div>
+			<p>그리드2</p>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">첫 번째 열의 요소 </div>
+				<div class="ui-block-b">두 번째 열의 요소 </div>
+			</div>
+			<p>그리드2-1</p>
+			<div class="ui-grid-a ui-bar ui-bar-d">
+				<div class="ui-block-a">첫 번째 열의 요소</div>
+				<div class="ui-block-b">두 번째 열의 요소 </div>
+			</div>
+			<p>그리드2-2</p>
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><div class="ui-bar ui-bar-d">첫 번째 요소</div></div>
+				<div class="ui-block-b"><div class="ui-bar ui-bar-e">두 번째 요소 </div></div>
+			</div>
+			<p>그리드2-3</p>
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><div class="ui-bar ui-bar-d">첫 번째 요소</div></div>
+				<div class="ui-block-b"><div class="ui-bar ui-bar-e">두 번째 요소 </div></div>
+				<div class="ui-block-a"><div class="ui-bar ui-bar-e">세번째 요소</div></div>
+				<div class="ui-block-b"><div class="ui-bar ui-bar-d">네번째 요소</div></div>
+			</div>
+			<p>그리드3</p>
+			<div class="ui-grid-c">
+				<div class="ui-block-a"><img src="img/img1.png"/></div>
+				<div class="ui-block-b"><img src="img/img2.png"/></div>
+				<div class="ui-block-c"><img src="img/img3.png"/></div>
+				<div class="ui-block-d"><img src="img/img4.png"/></div>
+			</div>
+		</div>
+		<div data-role="footer">
+			<h1>풋터</h1>
+		</div>
+	</div>
+	
+</body>
+</html>

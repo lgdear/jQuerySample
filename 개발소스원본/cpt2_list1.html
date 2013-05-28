@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Mobile html element</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head>
+
+<body>
+
+	<div data-role="page" id="first"> <!-- 첫번째 페이지 -->
+		<div data-role="header">
+			<h1>헤더</h1>
+		</div>
+		<div data-role="content">
+			
+			<!-- todo 
+			<ol data-role="listview">
+			    <li>티아라 - Lovey-Dovey</li> 
+			    <li>현아,현승 - Trouble Maker</li> 
+			    <li>다이나믹 듀오 - 거기서거기</li> 
+			    <li>아이유 - 너랑 나</li> 
+			    <li>다비치,티아라 - 우리 사랑했잖아</li> 
+			    <li>10cm - 애상</li> 
+			    <li>지아 - 속상해서</li> 
+			    <li>티아라 - Cry Cry</li> 
+			    <li>허각,LE(EXID) - 그 노래를 틀때마다</li> 
+			    <li>노을 - 그리워 그리워</li>
+			</ol> 
+			
+			<ol data-role="listview"> 
+			    <li><a href="top10.html">티아라 - Lovey-Dovey</a></li> 
+			    <li><a href="top10.html">현아,현승 - Trouble Maker</a></li> 
+			    <li><a href="top10.html">다이나믹 듀오 - 거기서거기</a></li> 
+			    <li><a href="top10.html">아이유 - 너랑 나</a></li> 
+			    <li><a href="top10.html">다비치,티아라 - 우리 사랑했잖아</a></li> 
+			    <li><a href="top10.html">10cm - 애상</a></li> 
+			    <li><a href="top10.html">지아 - 속상해서</a></li> 
+			    <li><a href="top10.html">티아라 - Cry Cry</a></li> 
+			    <li><a href="top10.html">허각,LE(EXID) - 그 노래를 틀때마다</a></li> 
+			    <li><a href="top10.html">노을 - 그리워 그리워</a></li>
+			</ol> 
+			<ul data-role="listview"> 
+			    <li><a href="top10.html">티아라 - Lovey-Dovey</a></li> 
+			    <li><a href="top10.html">현아,현승 - Trouble Maker</a></li> 
+			    <li><a href="top10.html">다이나믹 듀오 - 거기서거기</a></li> 
+			    <li><a href="top10.html">아이유 - 너랑 나</a></li> 
+			    <li><a href="top10.html">다비치,티아라 - 우리 사랑했잖아</a></li> 
+			    <li><a href="top10.html">10cm - 애상</a></li> 
+			    <li><a href="top10.html">지아 - 속상해서</a></li> 
+			    <li><a href="top10.html">티아라 - Cry Cry</a></li> 
+			    <li><a href="top10.html">허각,LE(EXID) - 그 노래를 틀때마다</a></li> 
+			    <li><a href="top10.html">노을 - 그리워 그리워</a></li>
+			</ul> 
+			
+			<ul data-role="listview"> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/tara.jpg" />
+			    		<h1>티아라 - Lovey-Dovey</h1>			    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/tm.jpg" />
+			    		<h1>현아,현승 - Trouble Maker</h1>    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/duo.jpg" />
+			    		<h1>다이나믹 듀오 - 거기서거기</h1>			    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/iu.jpg" />
+			    		<h1>아이유 - 너랑 나</h1>			    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/dt.jpg" />
+			    		<h1>다비치,티아라 - 우리 사랑했잖아</h1>			    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/10cm.jpg" />
+			    		<h1>10cm - 애상</h1>			    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/ja.jpg" />
+			    		<h1>지아 - 속상해서</h1>			    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/tara.jpg" />
+			    		<h1>티아라 - Cry Cry</h1>			    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/hl.jpg" />
+			    		<h1>허각,LE(EXID) - 그 노래를 틀때마다</h1>			    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/ny.jpg" />
+			    		<h1>노을 - 그리워 그리워</h1>			    
+			    	</a>
+			    </li> 
+			</ul> 
+			
+			
+			<ul data-role="listview"> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		티아라 - Lovey-Dovey
+			    		<span class="ui-li-count">5</span>			    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		현아,현승 - Trouble Maker  
+			    		<span class="ui-li-count">7</span>		 
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		다이나믹 듀오 - 거기서거기	
+			    		<span class="ui-li-count">8</span>			    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		아이유 - 너랑 나		    
+			    		<span class="ui-li-count">25</span>		
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		다비치,티아라 - 우리 사랑했잖아	
+			    		<span class="ui-li-count">3</span>			    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		10cm - 애상		    
+			    		<span class="ui-li-count">9</span>		
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		지아 - 속상해서		    
+			    		<span class="ui-li-count">0</span>		
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		티아라 - Cry Cry		    
+			    		<span class="ui-li-count">1</span>		
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		허각,LE(EXID) - 그 노래를 틀때마다
+			    		<span class="ui-li-count">2</span>				    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		노을 - 그리워 그리워		    
+			    		<span class="ui-li-count">11</span>		
+			    	</a>
+			    </li> 
+			</ul> 
+			
+			
+			
+			<ul data-role="listview"> 
+				<li data-role="list-divider">개별 팀</li>
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		티아라 - Lovey-Dovey
+			    		<span class="ui-li-count">5</span>			    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		아이유 - 너랑 나		    
+			    		<span class="ui-li-count">25</span>		
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		10cm - 애상		    
+			    		<span class="ui-li-count">9</span>		
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		지아 - 속상해서		    
+			    		<span class="ui-li-count">0</span>		
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		티아라 - Cry Cry		    
+			    		<span class="ui-li-count">1</span>		
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		노을 - 그리워 그리워		    
+			    		<span class="ui-li-count">11</span>		
+			    	</a>
+			    </li> 
+				<li data-role="list-divider">혼합 팀</li>
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		현아,현승 - Trouble Maker  
+			    		<span class="ui-li-count">7</span>		 
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		다이나믹 듀오 - 거기서거기	
+			    		<span class="ui-li-count">8</span>			    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		다비치,티아라 - 우리 사랑했잖아	
+			    		<span class="ui-li-count">3</span>			    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		허각,LE(EXID) - 그 노래를 틀때마다
+			    		<span class="ui-li-count">2</span>				    
+			    	</a>
+			    </li> 
+			</ul> 
+					
+			
+			-->
+			
+			
+			<ul data-role="listview" data-inset="true"> 
+				<li data-role="list-divider">개별 팀</li>
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		티아라 - Lovey-Dovey
+			    		<span class="ui-li-count">5</span>			    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		아이유 - 너랑 나		    
+			    		<span class="ui-li-count">25</span>		
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		10cm - 애상		    
+			    		<span class="ui-li-count">9</span>		
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		지아 - 속상해서		    
+			    		<span class="ui-li-count">0</span>		
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		티아라 - Cry Cry		    
+			    		<span class="ui-li-count">1</span>		
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		노을 - 그리워 그리워		    
+			    		<span class="ui-li-count">11</span>		
+			    	</a>
+			    </li> 
+				<li data-role="list-divider">혼합 팀</li>
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		현아,현승 - Trouble Maker  
+			    		<span class="ui-li-count">7</span>		 
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		다이나믹 듀오 - 거기서거기	
+			    		<span class="ui-li-count">8</span>			    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		다비치,티아라 - 우리 사랑했잖아	
+			    		<span class="ui-li-count">3</span>			    
+			    	</a>
+			    </li> 
+			    <li>
+			    	<a href="top10.html">
+			    		<img src="img/img16x.png" class="ui-li-icon" />
+			    		허각,LE(EXID) - 그 노래를 틀때마다
+			    		<span class="ui-li-count">2</span>				    
+			    	</a>
+			    </li> 
+			</ul> 
+			
+			
+			<!-- 
+			-->
+			
+		</div>
+		<div data-role="footer">
+			<h1>풋터</h1>
+		</div>
+	</div>
+	
+</body>
+</html>

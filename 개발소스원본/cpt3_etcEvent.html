@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Mobile event</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="js/etc_event.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+</head>
+
+<body>
+
+	<div data-role="page" id="main">
+		<div data-role="header">
+			<h1>헤더</h1>
+		</div>
+		<div data-role="content">
+		<!-- 
+			<p>메인 페이지</p>
+			<p>기타 다양한 이벤트를 알아봅니다.</p>
+			<button>이동</button>
+		 -->
+		 <div data-role="fieldcontain">
+			<ul data-role="listview" data-inset="true">
+				<li id="tgt"><a href="a.html" >11</a></li>		
+				<li><a href="a.html">22</a></li>		
+				<li><a href="a.html">33</a></li>		
+				<li><a href="a.html">44</a></li>		
+			</ul>
+			 <div data-role="fieldcontain" >
+			 	<a href="#" data-role="button" data-inline="true" >AA</a>
+			 	<a href="#" data-role="button" data-inline="true" data-theme="b">BB</a>
+			 	<a href="#" data-role="button" data-inline="true" data-theme="c">CC</a>
+			</div>
+			<button>이동</button>
+		</div>
+		</div>
+		<div data-role="footer">
+			<h1>풋터</h1>
+		</div>
+	</div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Mobile page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$.mobile.changePage("cpt2_page8-2.html", "pop", false, false);
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+	<div data-role="page" id="first"> <!-- 첫번째 페이지 -->
+		<div data-role="header">
+			<h1>헤더</h1>
+		</div>
+		<div data-role="content">
+			<p >버튼을 클릭하면 다음 페이지로 이동합니다</p>
+			<button>클릭하세요</button>
+		</div>
+		<div data-role="footer">
+			<h1>풋터</h1>
+		</div>
+	</div>
+	
+</body>
+</html>

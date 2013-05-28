@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Mobile Application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+	
+	<link rel="stylesheet" href="theme/custom-theme.css" />
+	<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />-->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile.structure-1.0.1.min.css" />-->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="js/cpt4_theme_common.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	
+</head>
+
+<body>
+
+	<div data-role="page" id="themePage" data-theme="c">
+		<div data-role="header" id="themeHeader" data-theme="c">
+			<a href="cpt4_main.html" data-rel="back">Home</a>
+			<h1>사용자 테마 만들기</h1>
+			<a href="http://jquerymobile.com/themeroller" data-icon="info" class="ui-btn-right">themeroller</a>
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-theme="a">theme A</a></li>
+					<li><a href="#" data-theme="b">theme B</a></li>
+					<li><a href="#" data-theme="c">theme C</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div data-role="content">
+		
+			<!-- 사용자 아이콘 -->
+			<div data-role="fieldcontain">
+				<a href="#" data-role="button">Button</a>
+				<a href="#" data-role="button" data-iconpos="notext"></a>
+			</div>
+			
+			<!-- 버튼 -->
+			<div data-role="fieldcontain">
+				<div data-role="controlgroup" data-type="horizontal">
+					<a href="#" data-role="button" data-theme="a">A</a>
+					<a href="#" data-role="button" data-theme="b">B</a>
+					<a href="#" data-role="button" data-theme="c">C</a>
+				</div>
+			</div>
+			
+			<!-- 그리드 -->
+			<div data-role="fieldcontain">
+				<fieldset class="ui-grid-b">
+					<div class="ui-block-a"><div class="ui-bar ui-bar-a">theme A</div></div>
+					<div class="ui-block-b"><div class="ui-bar ui-bar-b">theme B</div></div>
+					<div class="ui-block-c"><div class="ui-bar ui-bar-c">theme C</div></div>
+				</fieldset>
+			</div>
+			
+			<!-- 텍스트 -->
+			<div data-role="fieldcontain">
+				<input type="text" />
+				<textarea cols="10" rows="3"></textarea>
+			</div>
+			
+			<!-- 슬라이드 -->
+			<div data-role="fieldcontain">
+				<input type="range" min="0" max="100" />
+			</div>
+			
+			<!-- 플립 -->
+			<div data-role="fieldcontain">
+				<select data-role="slider">
+					<option>on</option>
+					<option>off</option>
+				</select>					
+			</div>
+			
+			<!-- 라디오 -->
+			<div data-role="fieldcontain">
+				<div data-role="controlgroup">
+					<label for="radio_a">theme A</label><input type="radio" id="radio_a"/>
+					<label for="radio_b">theme B</label><input type="radio" id="radio_b"/>
+					<label for="radio_c">theme C</label><input type="radio" id="radio_c"/>
+				</div>
+			</div>
+			
+			<!-- 셀렉트 -->
+			<div data-role="fieldcontain">
+				<select data-native-menu="false">
+					<option value="a">theme A</option>
+					<option value="b">theme B</option>
+					<option value="c">theme C</option>					 
+				</select>
+			</div>
+			
+			<!-- 리스트 -->
+			<div data-role="fieldcontain">
+				<ul data-role="listview" data-inset="true">
+					<li data-theme="a">theme A</li>
+					<li data-theme="a">theme B</li>
+					<li data-theme="a">theme c</li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="footer" id="themeFooter" data-theme="c">
+			<h1>jQuery Mobile by daeson</h1>
+		</div>
+	</div>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Mobile Button</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head>
+
+<body>
+
+	<div data-role="page" id="first" > <!-- 첫번째 페이지 -->
+		<div data-role="header" >
+			<h1>네비게이션바1</h1>
+		</div>
+		<div data-role="content">
+			<p>첫번째 페이지 입니다.</p>			
+		</div>
+		<div data-role="footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#first" class="ui-btn-active">first</a></li>
+					<li><a href="#second">second</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" id="second" data-add-back-btn="true" data-back-btn-text="돌아가기"> <!-- 두번째 페이지 -->
+		<div data-role="header"  >	
+			<h2>네비게이션바2</h2>
+		</div>
+		<div data-role="content">
+			<p>두번째 페이지 입니다.</p>
+		</div>
+		<div data-role="footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#first">first</a></li>
+					<li><a href="#second" class="ui-btn-active">second</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

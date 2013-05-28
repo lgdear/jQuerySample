@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Mobile grid</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head>
+
+<body>
+
+	<div data-role="page" id="first"> <!-- 첫번째 페이지 -->
+		<div data-role="header">
+			<h1>헤더</h1>
+		</div>
+		<div data-role="content">
+			<div data-role="collapsible">
+				<h1>접이식 블록</h1>
+				<p>블록의 내용 부분입니다.</p>
+			</div>
+			<BR />
+			<div data-role="collapsible" data-collapsed="false">
+				<h2>접이식 블록</h2>
+				<p>블록의 내용 부분입니다.</p>
+			</div>
+			<BR />
+			<div data-role="collapsible" >
+				<h3>동 물</h3>
+				<ui data-role="listview">
+					<li><a href="dog.html">강아지</a></li>
+					<li><a href="cat.html">고양이</a></li>
+					<li><a href="pig.html">돼지</a></li>
+					<li><a href="bull.html">소</a></li>
+				</ui>
+			</div>
+			<BR />
+			<div data-role="collapsible" >
+				<h3>회원 가입</h3>
+				<label for="id">아이디:</label>
+				<input type="text" id="id" />
+				<label for="pw">패스워드:</label>
+				<input type="password" id="pw" />
+				<label for="age">나이:</label>
+				<input type="range" id="age" min="0" max="100"/>
+				<label for="regDate">가입일자:</label>
+				<input type="date" id="regDate" />
+				<fieldset>
+					<button data-inline="true">전송</button>
+					<button data-inline="true">취소</button>
+				</fieldset>
+			</div>
+			<BR />
+			<div data-role="collapsible" >
+				<h3>상위 접이식 블록</h3>
+				<p>내용은 두개의 하위 접이식 블록으로 구성되어 있습니다.</p>					
+				<div data-role="collapsible" >
+					<h3>하위 첫번째 접이식 블록</h3>
+					<p>중첩된 첫번째 블록입니다.</p>					
+				</div>
+				<div data-role="collapsible" >
+					<h3>하위 두번째 접이식 블록</h3>
+					<p>중첩된 두번째 블록입니다.</p>					
+				</div>
+			</div>
+			<BR />
+			<div data-role="collapsible-set" >
+				<div data-role="collapsible" >
+					<h3>1번 접이식 블록</h3>
+					<p>안녕하세요. 1번 당첨입니다.</p>					
+				</div>
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>2번 접이식 블록</h3>
+					<p>방갑습니다. 2번 당첨입니다.</p>					
+				</div>
+				<div data-role="collapsible" >
+					<h3>3번 접이식 블록</h3>
+					<p>죄송합니다. 꽝입니다.</p>			
+				</div>
+			</div>
+		</div>
+		<div data-role="footer">
+			<h1>풋터</h1>
+		</div>
+	</div>
+	
+</body>
+</html>

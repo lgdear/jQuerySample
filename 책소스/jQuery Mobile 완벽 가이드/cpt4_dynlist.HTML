@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Mobile Application</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="js/cpt4_common.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+	<script src="js/address_data.js"></script>
+</head>
+
+<body>
+		<div data-role="page" id="dynList">
+			<div data-role="header">
+				<h1>json을 이용한 동적 리스트</h1>
+			</div>
+			<div data-role="fieldcontain">
+					<label for="showCnt">더보기 갯수</label>
+					<input type="range" id="showCnt" min="0" max="50" value="5" />
+			</div>
+			<div data-role="fieldcontain">
+				<button id="showBtn" data-inline="true">더보기</button>
+				<button id="initBtn" data-inline="true">초기화</button>
+			</div>
+			
+			<div data-role="fieldcontain">
+				<label for="address">주소 리스트</label>
+				<ol data-role="listview"  data-inset="true" data-theme="d" id="address">
+					<li data-role="list-divider">주소</li>
+				</ol>
+			</div>
+			<div data-role="footer">
+				<h1>jQuery Mobile by json</h1>
+			</div>
+		</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

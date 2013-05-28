@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Mobile Button</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head>
+
+<body>
+
+	<div data-role="page" id="first"> <!-- 첫번째 페이지 -->
+		<div data-role="header">
+			<h1>헤더</h1>
+		</div>
+		<div data-role="content">
+		
+		<!-- todo
+			<div data-role="controlgroup" data-type="horizontal">
+				<a href="index.html" data-role="button" > 기본 </a>
+				<a href="index.html" data-role="button" data-theme="a" > A테마 </a>
+				<a href="index.html" data-role="button" data-theme="b" > B테마 </a>
+				<a href="index.html" data-role="button" data-theme="c" > C테마 </a>
+				<a href="index.html" data-role="button" data-theme="d" > D테마 </a>
+				<a href="index.html" data-role="button" data-theme="e" > E테마  </a>
+			</div>
+		
+			
+			<ul data-role="listview" data-inset="true"> 
+			    <li data-theme="a"><a href="top.html">A테마</a></li> 
+			    <li data-theme="b"><a href="top.html">B테마</a></li> 
+			    <li data-theme="c"><a href="top.html">C테마</a></li> 
+			    <li data-theme="d"><a href="top.html">D테마</a></li> 
+			    <li data-theme="e"><a href="top.html">E테마</a></li> 
+			</ul> 
+			
+		-->
+			<ul data-role="listview" data-inset="true"> 
+			    <li data-theme="a" data-role="fieldcontain">
+			    	<a href="top.html">A테마</a>
+			    	<button data-theme="e" data-inline="true"> E테마  </button>
+			    	<button data-theme="b" data-inline="true"> B테마  </button>
+			    </li> 
+			    <li data-theme="b" data-role="fieldcontain">
+			    	<a href="top.html">B테마</a>
+			    	<button data-theme="a" data-inline="true"> A테마  </button>
+			    	<button data-theme="c" data-inline="true"> C테마  </button>
+			    </li> 
+			    <li data-theme="c" data-role="fieldcontain">
+			    	<a href="top.html">C테마</a>
+			    	<button data-theme="a" data-inline="true"> A테마  </button>
+			    	<button data-theme="b" data-inline="true"> B테마  </button>
+			    </li> 
+			    <li data-theme="d" data-role="fieldcontain">
+			    	<a href="top.html">D테마</a>
+			    	<button data-theme="a" data-inline="true"> A테마  </button>
+			    	<button data-theme="e" data-inline="true"> E테마  </button>
+			    </li> 
+			    <li data-theme="e" data-role="fieldcontain">
+			    	<a href="top.html">E테마</a>
+			    	<button data-theme="b" data-inline="true"> B테마  </button>
+			    	<button data-theme="d" data-inline="true"> D테마  </button>
+			    </li> 
+			</ul> 
+			
+		<!-- todo
+		-->
+			
+		</div>
+		<div data-role="footer">
+			<h1>풋터</h1>
+		</div>
+	</div>
+	
+</body>
+</html>
